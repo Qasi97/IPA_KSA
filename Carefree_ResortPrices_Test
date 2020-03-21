@@ -1,0 +1,43 @@
+using System;
+
+namespace Resort_Price
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] pricePerNight = { 0, 200, 200, 180, 180, 160, 160, 160, 145};
+            Console.WriteLine("How many nights will you stay?");
+            int night = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("I will stay {0} night/s",night);
+            Console.WriteLine("...............................................");
+            switch(night)
+            {
+            case 1:
+                    Console.WriteLine("The Cost of {0} is {1}", night, pricePerNight[1].ToString("C"));
+                    break;
+                case 2 :
+                    Console.WriteLine("The Cost of {0} is {1}", night, pricePerNight[2].ToString("C"));
+                    break;
+                case 3:
+                    Console.WriteLine("The Cost of {0} is {1}", night, pricePerNight[3].ToString("C"));
+                    break;
+                case 4:
+                    Console.WriteLine("The Cost of {0} is {1}", night, pricePerNight[4].ToString("C"));
+                    break;
+                case 5:
+                    Console.WriteLine("The Cost of {0} is {1}", night, pricePerNight[5].ToString("C"));
+                    break;
+                case 6:
+                    Console.WriteLine("The Cost of {0} is {1}", night, pricePerNight[6].ToString("C"));
+                    break;
+                case 7:
+                    Console.WriteLine("The Cost of {0} is {1}", night, pricePerNight[7].ToString("C"));
+                    break;
+                default:
+                    Console.WriteLine("The Cost of {0} is {1}", night, pricePerNight[8].ToString("C"));
+                    break;
+            }
+        }
+    }
+}
