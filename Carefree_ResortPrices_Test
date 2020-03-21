@@ -9,6 +9,7 @@ namespace Resort_Price
             int[] pricePerNight = { 0, 200, 200, 180, 180, 160, 160, 160, 145};
             Console.WriteLine("How many nights will you stay?");
             int night = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Hint : The Limit of nights is 10");
             Console.WriteLine("I will stay {0} night/s",night);
             Console.WriteLine("...............................................");
             switch(night)
