@@ -1,0 +1,30 @@
+using System;
+
+namespace CheckZips
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] zip = {"Qatif","Mekka","Riyadh","Jeddah","Dammam","Khobar","Jobail","Taif","Meddina","Jazan"};
+            int i = 0;
+            bool zipFound = false;
+            string urzip = Console.ReadLine();
+            for(i = 0;i<zip.Length && !zipFound; i++)
+            {
+                if(urzip == zip[i])
+                {
+                    Console.WriteLine("Delivery to {0},Ok.",urzip);
+                    zipFound = true;
+                    break;
+                }
+            }
+            if (!zipFound)
+            {
+                Console.WriteLine("Sorry,We can't deliver to {0}",urzip);
+                return;
+            }
+            Console.ReadKey();
+        }
+    }
+}
